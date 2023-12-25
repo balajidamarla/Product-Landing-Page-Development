@@ -1,0 +1,164 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #e8491d;
+}
+img{
+    width: 100%;
+    height: 600px;
+}
+
+.hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 4em 0;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #e8491d;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #333;
+}
+
+.features {
+    padding: 4em 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature {
+    text-align: center;
+    margin-bottom: 2em;
+    flex: 0 0 30%;
+}
+.feature p{
+    font-style: italic;
+}
+
+.feature img {
+    width: 80%;
+    border-radius: 20px;
+    height: 450px;
+}
+
+.specifications {
+    background-color: #f4f4f4;
+    padding: 4em 0;
+}
+.specifications h2{
+    font-size: 40px;
+    text-decoration-line: underline;
+}
+.specifications .spec{
+    text-align: center;
+    font-style: oblique;
+}
+
+.buy-now {
+    text-align: center;
+    padding: 4em 0;
+}
+.spec-feature img{
+    width: 30%;
+    border-radius: 45px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: none;
+    width: 100%;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        flex: 0 0 80%;
+    }
+}
+
+.footer-section-links li a{
+    color: #256cdc;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    text-align: center;
+}
+
+.social-links{
+    font-size: 15px;
+}
+.social-links img {
+    width: 30px;
+    height: 30px;
+    transition: all 0.2s ease-in-out;
+    
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+}
